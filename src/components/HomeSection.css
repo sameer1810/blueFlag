@@ -1,0 +1,33 @@
+.slider-container .slick-slide {
+    position: relative; /* Allow absolute positioning inside */
+    opacity: 0.5; /* Slightly fade out side slides */
+    transition: all 0.5s ease;
+    transform: scale(0.9); /* Scale down side slides */
+    z-index: 1; /* Lower z-index for side slides */
+  }
+  
+  .slider-container .slick-center {
+    z-index: 2; /* Bring center slide to the top */
+    opacity: 1; /* Make center slide fully opaque */
+    transform: scale(1.1); /* Scale up center slide */
+  }
+  
+  .slider-container .slide-content {
+    position: relative; /* Set relative positioning for contents */
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for better visibility */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center; /* Center text */
+  }
+  
+  .slide-image {
+    width: 100%; /* Adjust image width to fit */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 150px; /* Limit maximum height for uniformity */
+    transition: transform 0.5s ease;
+  }
+  
+  .slick-prev, .slick-next {
+    display: none; /* Hide navigation buttons */
+  }
+  
