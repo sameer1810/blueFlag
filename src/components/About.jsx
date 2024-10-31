@@ -62,7 +62,8 @@ const About = () => {
 
         {/* Button */}
         <button onClick={()=>navigate("/contact")}
-            className="bg-customPurple hover:bg-customPurpleDark text-white text-base sm:text-lg md:text-xl px-6 sm:px-8 py-3 rounded-lg transition duration-300"
+            className="bg-customPurple  border-2 border-transparent hover:bg-transparent hover:border-white hover:bg-customPurpleDark text-white text-base sm:text-lg md:text-xl px-6 sm:px-8 py-3 rounded-lg transition duration-300"
+           
         >
             Start a project
         </button>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaLaptopCode, FaPencilRuler, FaPaintBrush, FaLightbulb } from 'react-icons/fa'; // Import relevant icons
+import { useNavigate } from 'react-router-dom';
 
 const services = [
   {
@@ -37,6 +38,13 @@ const services = [
 const ServiceCard = ({ service }) => {
   const [isHovered, setIsHovered] = useState(false);
 
+  const navigate  = useNavigate()
+
+
+  const serviceNavigate= ()=>{
+      navigate("/service")
+  }
+
   return (
     <div
       className="relative p-4 cursor-pointer"
@@ -49,10 +57,15 @@ const ServiceCard = ({ service }) => {
         {isHovered ? (
           <div className="absolute top-0 left-0 w-full h-full p-4 bg-customPurple flex flex-col justify-center items-center rounded-xl z-10 transition-opacity duration-500">
             <p className="text-white mb-4">{service.description}</p>
-            <button className="text-white underline">View All</button>
+            <button className="text-white underline"
+            onClick={()=>serviceNavigate()}
+            >View All</button>
           </div>
         ) : (
-          <button className="text-customPurple  mt-4">Learn More</button>
+          <button className="text-customPurple  mt-4"
+          
+          
+          >Learn More</button>
         )}
       </div>
     </div>

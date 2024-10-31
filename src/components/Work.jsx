@@ -1,8 +1,8 @@
 import React from "react";
 import CardGrid from "./CardGrid";
-
+import { useNavigate } from "react-router-dom";
 const Work = ()=>{
-
+    const navigate = useNavigate();
     return(
         <div className="bg-transparent text-white py-16 px-6">
             <div className="bg-transparent text-center mb-16 relative">
@@ -24,8 +24,8 @@ const Work = ()=>{
                 </h2>
 
                 {/* Button */}
-                <button
-                    className="bg-customPurple hover:bg-customPurpleDark text-white text-base sm:text-lg md:text-xl px-6 sm:px-8 py-3 rounded-lg transition duration-300"
+                <button onClick={()=>navigate("/contact")}
+                    className="bg-customPurple  border-2 border-transparent hover:bg-transparenthover:border-white hover:bg-customPurpleDark text-white text-base sm:text-lg md:text-xl px-6 sm:px-8 py-3 rounded-lg transition duration-300"
                 >
                     Start a project
                 </button>

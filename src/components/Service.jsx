@@ -1,7 +1,9 @@
 import React from 'react';
 import { FaSearch, FaDraftingCompass, FaPencilRuler, FaShoppingCart,FaFont, FaBlogger, FaFileCode,FaYoutube,FaBoxOpen } from 'react-icons/fa';
+import { useNavigate } from "react-router-dom";
 
 const Service = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-transparent text-white py-16 px-6">
       {/* Heading Section */}
@@ -178,7 +180,8 @@ const Service = () => {
 
         {/* Button */}
         <button
-            className="bg-customPurple hover:bg-customPurpleDark text-white text-base sm:text-lg md:text-xl px-6 sm:px-8 py-3 rounded-lg transition duration-300"
+            className="bg-customPurple  border-2 border-transparent hover:bg-transparent hover:border-white hover:bg-customPurpleDark text-white text-base sm:text-lg md:text-xl px-6 sm:px-8 py-3 rounded-lg transition duration-300"
+            onClick={()=>navigate("/contact")}
         >
             Start a project
         </button>
