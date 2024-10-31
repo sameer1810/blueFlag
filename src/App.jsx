@@ -37,6 +37,9 @@ function AnimatedRoutes() {
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Service />}/>
           <Route path="/work" element={<Work />} />
+          <Route path="/work/bomchi-cafe-detail" element={<BomchiCafeDetail />} />
+          <Route path="/work/wanglow-detail" element={<WanglowDetail />} />
+          <Route path="/work/web-design-detail" element={<WebDesignDetail />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </CSSTransition>

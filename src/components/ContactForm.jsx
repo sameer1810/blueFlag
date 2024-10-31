@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Html, Button } from "@react-email/components";
-
+import emailjs from '@emailjs/browser';  
 
 const ContactForm = (props) => {
   console.log(props);
@@ -23,6 +23,39 @@ const ContactForm = (props) => {
     e.preventDefault();
     // Handle form submission
     console.log('Form Data:', formData);
+
+    const templateParams = {
+      firstName: formData.firstName,
+      lastName: formData.lastName,
+      email: formData.email,
+      phoneNumber: formData.phoneNumber,
+      message: formData.message,
+    };
+
+    emailjs
+      .send(
+        'service_byvpjxh', 
+        'template_lenwqpi',
+        templateParams,
+        'LIWHtYZhrozHOqF2J'      
+      )
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+          alert('Your message was sent successfully!');
+          setFormData({
+            firstName: '',
+            lastName: '',
+            email: '',
+            phoneNumber: '',
+            message: '',
+          });
+        },
+        (error) => {
+          console.error('FAILED...', error);
+          alert('There was an error sending your message.');
+        }
+      );
   };
 
   return (
@@ -125,9 +158,6 @@ const ContactForm = (props) => {
               >
                 Send Message
               </button>
-              <Html lang="en">
-      <Button href={url}>Click me</Button>
-    </Html>
             </form>
           </div>
         </div>

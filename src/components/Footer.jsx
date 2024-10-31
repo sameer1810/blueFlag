@@ -1,6 +1,12 @@
 import React from 'react';
 
 const FooterComponent = () => {
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Enables smooth scrolling
+    })
+  }
   return (
     <footer className="relative bg-black text-white py-12">
       <div className="border-t border-gray-700 mb-8"></div>
@@ -38,7 +44,13 @@ const FooterComponent = () => {
 
       {/* Scroll to Top and Made in India */}
       <div className="relative z-10 container mx-auto px-4 mt-10 md:mt-20 flex flex-col items-center" style={{ top: '45px' }}>
-        <a href="#" className="text-white hover:text-indigo-500 mb-4">
+        <a href="#" className="text-white hover:text-indigo-500 mb-4"
+        
+        onClick={(e) => {
+          e.preventDefault(); // Prevents the default anchor behavior
+          handleScrollToTop();
+        }}
+        >
           <i className="fas fa-arrow-up text-xl sm:text-2xl"></i>  {/* Responsive icon size */}
         </a>
         <span className="text-xs sm:text-sm">MADE IN INDIA</span>
