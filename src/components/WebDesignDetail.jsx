@@ -24,18 +24,18 @@ const WebDesignDetail = () => {
                     <p className=" text-lg md:text-2xl mb-8 lg:mb-24">The photographer appreciated the clean design and ease of use, noting that it made showcasing their work to clients much simpler. Early feedback from users highlighted how intuitive the website was to navigate, regardless of their age or tech experience.</p>
 
                     <div className="bg-transparent text-white py-16 flex flex-col items-center justify-center space-y-12 px-4">
-                {/* Heading */}
-                <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center leading-snug md:leading-normal">
-                    Want a custom solution for your business? <br className="hidden md:block"/> Let’s connect.
-                </h2>
+                      {/* Heading */}
+                      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center leading-snug md:leading-normal">
+                          Want a custom solution for your business? <br className="hidden md:block"/> Let’s connect.
+                      </h2>
 
-                {/* Button */}
-                <button onClick={()=>navigate("/contact")}
-                    className="bg-customPurple  border-2 border-transparent hover:bg-transparent hover:border-white hover:bg-customPurpleDark text-white text-base sm:text-lg md:text-xl px-6 sm:px-8 py-3 rounded-lg transition duration-300"
-                >
-                    Start a project
-                </button>
-                </div>
+                      {/* Button */}
+                      <button onClick={()=>navigate("/contact")}
+                          className="bg-customPurple  border-2 border-transparent hover:bg-transparent hover:border-white hover:bg-customPurpleDark text-white text-base sm:text-lg md:text-xl px-6 sm:px-8 py-3 rounded-lg transition duration-300"
+                      >
+                          Start a project
+                      </button>
+                    </div>
                   
       
         </div>
