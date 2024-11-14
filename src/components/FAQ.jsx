@@ -33,7 +33,7 @@ const FAQSection = () => {
 
   return (
     <div className="bg-transparent text-white py-10 px-4">
-      
+
       <div className="max-w-6xl mx-auto">
         {faqs.slice(0, seeAll ? faqs.length : 4).map((faq, index) => (
           <div key={index} className="border border-gray-600 mb-4 rounded-md overflow-hidden">
@@ -44,9 +44,8 @@ const FAQSection = () => {
               <h3 className="text-lg font-semibold">{faq.question}</h3>
               {/* Icon with rotation transition */}
               <div
-                className={`transform transition-transform duration-300 ${
-                  expanded === index ? "rotate-45" : "rotate-0"
-                }`}
+                className={`transform transition-transform duration-300 ${expanded === index ? "rotate-45" : "rotate-0"
+                  }`}
               >
                 {expanded === index ? <FaTimes className="text-white" /> : <FaPlus className="text-white" />}
               </div>
@@ -54,11 +53,10 @@ const FAQSection = () => {
 
             {/* Collapsible answer with transition */}
             <div
-              className={`transition-all duration-500 ease-in-out overflow-hidden ${
-                expanded === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-              }`}
+              className={`transition-all duration-500 ease-in-out overflow-hidden ${expanded === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+                }`}
             >
-                <hr className="border-t border-gray-600 mx-4" /> 
+              <hr className="border-t border-gray-600 mx-4" />
               <div className="px-4 pb-4 pt-2 text-gray-400 text-base leading-relaxed text-left">
                 <p>{faq.answer}</p>
               </div>

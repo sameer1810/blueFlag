@@ -9,7 +9,7 @@ function Navbar() {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-    toggleFooter(); // Call the toggle footer function
+    // toggleFooter(); // Call the toggle footer function
   };
 
   // Effect to manage body overflow
@@ -80,9 +80,6 @@ function Navbar() {
           <li className="border-b border-gray-700 pb-4">
             <Link to="/about" className="hover:text-customPurple" onClick={toggleMenu}>About Us</Link>
           </li>
-
-      
-      
         </ul>
         
       </div>
