@@ -63,7 +63,7 @@ const Service = () => {
   {/* Image on the right*/}
   <div className="order-2 lg:order-none w-full lg:w-[450px] lg:h-[500px] mx-auto aspect-w-3 aspect-h-4 rounded-lg overflow-hidden shadow-lg ">
     <img
-      src="../../public/images/serviceImg1.svg"
+      src="../../public/images/ServiceImg1.png.png"
       alt="Web Design"
       className="w-full h-full object-cover"
     />
@@ -80,7 +80,7 @@ const Service = () => {
   {/* Image on the left */}
   <div className="order-2 lg:order-none w-full lg:w-[450px] lg:h-[500px] mx-auto aspect-w-3 aspect-h-4 rounded-lg overflow-hidden shadow-lg">
     <img
-      src="../../public/images/serviceImg2.svg"
+      src="../../public/images/ServiceImg2.png.png"
       alt="Web Development"
       className="w-full h-full object-cover"
     />
@@ -164,7 +164,7 @@ const Service = () => {
   {/* Image */}
   <div className="order-2 lg:order-none w-full lg:w-[450px] lg:h-[500px] mx-auto aspect-w-3 aspect-h-4 rounded-lg overflow-hidden shadow-lg">
     <img
-      src="../../public/images/serviceImg3.svg"
+      src="../../public/images/ServiceImg3.png.png"
       alt="Graphic Design"
       className="w-full h-full object-cover"
     />
