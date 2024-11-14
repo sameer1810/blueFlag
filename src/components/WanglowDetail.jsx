@@ -22,7 +22,7 @@ const WanglowDetail = () => {
         <div className="space-y-4">
           <p className="text-3xl md:text-4xl lg:text-5xl mb-10 md:mb-14 lg:mb-20">BEFORE</p>
           <img
-            src="/images/WorkImg3.svg"
+            src="/images/Thumbnail1.png"
             alt="Before Thumbnail 1"
             className="w-full h-auto object-contain border-4 border-blue-500 rounded-lg"
           />
@@ -30,7 +30,7 @@ const WanglowDetail = () => {
         <div className="space-y-4">
           <p className="text-3xl md:text-4xl lg:text-5xl mb-10 md:mb-14 lg:mb-20">AFTER</p>
           <img
-            src="/images/WorkImg3.svg"
+            src="/images/Thumbnail2.png"
             alt="After Thumbnail 1"
             className="w-full h-auto object-contain border-4 border-yellow-500 rounded-lg"
           />
@@ -39,7 +39,7 @@ const WanglowDetail = () => {
         <div className="space-y-4 md:mt-20">
           <p className="text-3xl md:text-4xl lg:text-5xl mb-10 md:mb-14 lg:mb-20">BEFORE</p>
           <img
-            src="/images/WorkImg3.svg"
+            src="/images/Thumbnail3.png"
             alt="Before Thumbnail 2"
             className="w-full h-auto object-contain border-4 border-blue-500 rounded-lg"
           />
@@ -47,7 +47,7 @@ const WanglowDetail = () => {
         <div className="space-y-4 md:mt-20">
           <p className="text-3xl md:text-4xl lg:text-5xl mb-10 md:mb-14 lg:mb-20">AFTER</p>
           <img
-            src="/images/WorkImg3.svg"
+            src="/images/Thumbnail4.png"
             alt="After Thumbnail 2"
             className="w-full h-auto object-contain border-4 border-yellow-500 rounded-lg"
           />
