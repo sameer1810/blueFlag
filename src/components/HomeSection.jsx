@@ -15,7 +15,7 @@ const HomeSection = () => {
 
     {/* Left Section - Centered text on mobile */}
     <div className="order-2 lg:order-1 flex flex-col justify-center text-center lg:text-left items-center lg:items-start">
-      <h1 className="text-[2.5rem] md:text-[2.8rem] lg:text-[3.5rem] font-bold leading-tight mb-8">
+      <h1 className="text-[2.5rem] md:text-[2.8rem] lg:text-[3rem] font-bold leading-tight mb-8">
         A custom solution for <br />
         <span className=" text-center text-[3rem] md:text-[4rem] lg:text-[4rem] uppercase font-bold  text-customPurple font-poppins">
           YOUR BUSINESS
