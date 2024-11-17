@@ -38,11 +38,11 @@ const services = [
 const ServiceCard = ({ service }) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const navigate  = useNavigate()
+  const navigate = useNavigate()
 
 
-  const serviceNavigate= ()=>{
-      navigate("/service")
+  const serviceNavigate = () => {
+    navigate("/service")
   }
 
   return (
@@ -51,21 +51,38 @@ const ServiceCard = ({ service }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className={`relative overflow-hidden rounded-xl bg-transparent border-2 border-white text-white p-8 flex flex-col items-center transition-all duration-500 ${isHovered ? 'bg-customPurple' : 'bg-black'}`}>
+      <div
+        className={`relative rounded-xl border-2 border-white text-white p-8 flex flex-col items-center justify-center transition-all duration-500 overflow-hidden ${isHovered ? 'bg-customPurple' : 'bg-black'
+          } 
+  h-64 w-64 sm:h-48 sm:w-48 md:h-64 md:w-64`}
+      >
         <div className="text-5xl mb-4">{service.icon}</div>
-        <h2 className="text-lg font-semibold">{service.title}</h2>
+        <h2
+          className={`text-lg font-semibold transition-all duration-300 ${isHovered ? 'text-xl font-bold' : ''
+            }`}
+        >
+          {service.title}
+        </h2>
         {isHovered ? (
-          <div className="absolute top-0 left-0 w-full h-full p-4 bg-customPurple flex flex-col justify-center items-center rounded-xl z-10 transition-opacity duration-500">
-            <p className="text-white mb-4">{service.description}</p>
-            <button className="text-white underline"
-            onClick={()=>serviceNavigate()}
-            >View All</button>
+          <div className="absolute top-0 left-0 w-full h-full lg:p-6 bg-customPurple flex flex-col lg:justify-center lg:items-center rounded-xl z-10 transition-all duration-500">
+            <p
+              className="text-white mb-4 text-center text-xs md:text-base lg:text-sm transition-all duration-300"
+            >
+              {service.description}
+            </p>
+            <button
+              className="text-white underline text-sm md:text-base"
+              onClick={() => serviceNavigate()}
+            >
+              View All
+            </button>
           </div>
         ) : (
-          <button className="text-customPurple  mt-4"
-          
-          
-          >Learn More</button>
+          <button
+            className="text-customPurple mt-4 text-sm md:text-base transition-all duration-300"
+          >
+            Learn More
+          </button>
         )}
       </div>
     </div>
