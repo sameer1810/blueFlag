@@ -10,7 +10,7 @@ const Service = () => {
       <div className="text-center mb-16 relative">
         {/* Large background text */}
         <h1 className="text-transparent text-[4rem] lg:text-[10rem] uppercase font-bold stroke-text tracking-wider font-poppins">
-          Services
+          sameee
         </h1>
 
         {/* Subtitle */}
