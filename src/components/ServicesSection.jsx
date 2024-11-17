@@ -51,7 +51,7 @@ const ServiceCard = ({ service }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className={`rounded-xl bg-transparent border-2 border-white text-white p-8 flex flex-col items-center transition-all duration-500 ${isHovered ? 'bg-customPurple' : 'bg-black'}`}>
+      <div className={`relative overflow-hidden rounded-xl bg-transparent border-2 border-white text-white p-8 flex flex-col items-center transition-all duration-500 ${isHovered ? 'bg-customPurple' : 'bg-black'}`}>
         <div className="text-5xl mb-4">{service.icon}</div>
         <h2 className="text-lg font-semibold">{service.title}</h2>
         {isHovered ? (
