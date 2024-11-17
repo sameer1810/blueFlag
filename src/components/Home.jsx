@@ -14,7 +14,7 @@ const Home = () => {
             <HomeSection></HomeSection>
             <div className="text-center mb-20 relative">
                 {/* Sevice heading */}
-                <h1 className="text-transparent text-center text-[4rem] lg:text-[10rem] uppercase font-bold stroke-text tracking-wider stroke-blue-600 font-poppins">
+                <h1 className="text-transparent text-center text-[4rem] lg:text-[10rem] uppercase font-bold stroke-text tracking-wider stroke-pink-600 font-poppins">
                     Services
                 </h1>
                 {/* Subtitle */}
